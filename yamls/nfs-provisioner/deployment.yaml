@@ -24,9 +24,9 @@ spec:
             - name: NFS_SERVER
               value: <<NFS Server IP>>
             - name: NFS_PATH
-              value: /srv/nfs/kubedata
+              value: /var/nfs/general
       volumes:
         - name: nfs-client-root
           nfs:
             server: <<NFS Server IP>>
-            path: /srv/nfs/kubedata
+            path: /var/nfs/general
